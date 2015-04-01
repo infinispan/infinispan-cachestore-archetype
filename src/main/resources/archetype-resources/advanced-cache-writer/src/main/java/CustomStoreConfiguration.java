@@ -12,14 +12,14 @@ import org.infinispan.configuration.cache.SingletonStoreConfiguration;
 
 public class CustomStoreConfiguration extends AbstractStoreConfiguration {
 
-	public CustomStoreConfiguration(boolean purgeOnStartup,
-			boolean fetchPersistentState, boolean ignoreModifications,
-			AsyncStoreConfiguration async,
-			SingletonStoreConfiguration singletonStore, boolean preload,
-			boolean shared, Properties properties) {
-		super(purgeOnStartup, fetchPersistentState, ignoreModifications, async,
-				singletonStore, preload, shared, properties);
-		// TODO Auto-generated constructor stub
-	}
+    public CustomStoreConfiguration(boolean purgeOnStartup,
+            boolean fetchPersistentState, boolean ignoreModifications,
+            AsyncStoreConfiguration async,
+            SingletonStoreConfiguration singletonStore, boolean preload,
+            boolean shared, Properties properties) {
+        super(purgeOnStartup, fetchPersistentState, ignoreModifications, async,
+                singletonStore, preload, shared, properties);
+        // TODO Auto-generated constructor stub
+    }
 
 }

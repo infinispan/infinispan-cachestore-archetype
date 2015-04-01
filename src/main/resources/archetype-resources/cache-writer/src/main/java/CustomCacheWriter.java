@@ -11,34 +11,34 @@ import org.kohsuke.MetaInfServices;
 @MetaInfServices
 public class CustomCacheWriter<K,V> implements CacheWriter<K, V> {
 
-	@Override
-	public void start() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void start() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public void stop() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void stop() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public boolean delete(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean delete(Object arg0) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 
-	@Override
-	public void init(InitializationContext arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void init(InitializationContext arg0) {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public void write(MarshalledEntry<? extends K, ? extends V> arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void write(MarshalledEntry<? extends K, ? extends V> arg0) {
+        // TODO Auto-generated method stub
+        
+    }
 
 }

@@ -11,34 +11,34 @@ import org.kohsuke.MetaInfServices;
 @MetaInfServices
 public class CustomCacheLoader<K,V> implements CacheLoader<K, V> {
 
-	@Override
-	public void start() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void start() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public void stop() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void stop() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public boolean contains(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean contains(Object arg0) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 
-	@Override
-	public void init(InitializationContext arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void init(InitializationContext arg0) {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public MarshalledEntry<K, V> load(Object arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public MarshalledEntry<K, V> load(Object arg0) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
 }

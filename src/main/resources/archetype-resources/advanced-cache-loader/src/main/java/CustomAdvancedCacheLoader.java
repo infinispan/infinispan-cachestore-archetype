@@ -14,49 +14,49 @@ import org.kohsuke.MetaInfServices;
 @MetaInfServices
 public class CustomAdvancedCacheLoader<K,V> implements AdvancedCacheLoader<K, V> {
 
-	@Override
-	public boolean contains(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean contains(Object arg0) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 
-	@Override
-	public void init(InitializationContext arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void init(InitializationContext arg0) {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public MarshalledEntry<K, V> load(Object arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public MarshalledEntry<K, V> load(Object arg0) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public void start() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void start() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public void stop() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void stop() {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public void process(
-			KeyFilter<? super K> arg0,
-			org.infinispan.persistence.spi.AdvancedCacheLoader.CacheLoaderTask<K, V> arg1,
-			Executor arg2, boolean arg3, boolean arg4) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void process(
+            KeyFilter<? super K> arg0,
+            org.infinispan.persistence.spi.AdvancedCacheLoader.CacheLoaderTask<K, V> arg1,
+            Executor arg2, boolean arg3, boolean arg4) {
+        // TODO Auto-generated method stub
+        
+    }
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public int size() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 
 }
