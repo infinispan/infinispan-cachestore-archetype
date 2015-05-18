@@ -6,10 +6,14 @@ package ${package};
 
 import java.util.Properties;
 
+import org.infinispan.commons.configuration.BuiltBy;
+import org.infinispan.commons.configuration.ConfigurationFor;
 import org.infinispan.configuration.cache.AbstractStoreConfiguration;
 import org.infinispan.configuration.cache.AsyncStoreConfiguration;
 import org.infinispan.configuration.cache.SingletonStoreConfiguration;
 
+@BuiltBy(CustomStoreConfigurationBuilder.class)
+@ConfigurationFor(CustomAdvancedLoadWriteStore.class)
 public class CustomStoreConfiguration extends AbstractStoreConfiguration {
 
     public CustomStoreConfiguration(boolean purgeOnStartup,

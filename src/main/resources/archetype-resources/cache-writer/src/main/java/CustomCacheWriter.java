@@ -3,12 +3,14 @@
 #set( $symbol_escape = '\' )
 package ${package};
 
+import org.infinispan.commons.configuration.ConfiguredBy;
 import org.infinispan.marshall.core.MarshalledEntry;
 import org.infinispan.persistence.spi.CacheWriter;
 import org.infinispan.persistence.spi.InitializationContext;
 import org.kohsuke.MetaInfServices;
 
 @MetaInfServices
+@ConfiguredBy(CustomStoreConfiguration.class)
 public class CustomCacheWriter<K,V> implements CacheWriter<K, V> {
 
     @Override

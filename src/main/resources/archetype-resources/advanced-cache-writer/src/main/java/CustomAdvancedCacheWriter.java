@@ -5,12 +5,14 @@ package ${package};
 
 import java.util.concurrent.Executor;
 
+import org.infinispan.commons.configuration.ConfiguredBy;
 import org.infinispan.marshall.core.MarshalledEntry;
 import org.infinispan.persistence.spi.AdvancedCacheWriter;
 import org.infinispan.persistence.spi.InitializationContext;
 import org.kohsuke.MetaInfServices;
 
 @MetaInfServices
+@ConfiguredBy(CustomStoreConfiguration.class)
 public class CustomAdvancedCacheWriter<K,V> implements AdvancedCacheWriter<K, V> {
 
     @Override

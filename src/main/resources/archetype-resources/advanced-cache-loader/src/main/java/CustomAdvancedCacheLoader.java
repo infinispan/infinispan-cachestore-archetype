@@ -5,6 +5,7 @@ package ${package};
 
 import java.util.concurrent.Executor;
 
+import org.infinispan.commons.configuration.ConfiguredBy;
 import org.infinispan.filter.KeyFilter;
 import org.infinispan.marshall.core.MarshalledEntry;
 import org.infinispan.persistence.spi.AdvancedCacheLoader;
@@ -12,6 +13,7 @@ import org.infinispan.persistence.spi.InitializationContext;
 import org.kohsuke.MetaInfServices;
 
 @MetaInfServices
+@ConfiguredBy(CustomStoreConfiguration.class)
 public class CustomAdvancedCacheLoader<K,V> implements AdvancedCacheLoader<K, V> {
 
     @Override
