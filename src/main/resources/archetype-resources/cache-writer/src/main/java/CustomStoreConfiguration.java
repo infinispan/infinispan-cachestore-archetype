@@ -15,15 +15,21 @@ import org.infinispan.configuration.cache.SingletonStoreConfiguration;
 @BuiltBy(CustomStoreConfigurationBuilder.class)
 @ConfigurationFor(CustomCacheWriter.class)
 public class CustomStoreConfiguration extends AbstractStoreConfiguration {
+   
+    private final String sampleAttribute;
 
-    public CustomStoreConfiguration(boolean purgeOnStartup,
+    public CustomStoreConfiguration(String sampleAttribute, boolean purgeOnStartup,
             boolean fetchPersistentState, boolean ignoreModifications,
             AsyncStoreConfiguration async,
             SingletonStoreConfiguration singletonStore, boolean preload,
             boolean shared, Properties properties) {
         super(purgeOnStartup, fetchPersistentState, ignoreModifications, async,
                 singletonStore, preload, shared, properties);
-        // TODO Auto-generated constructor stub
+        this.sampleAttribute = sampleAttribute;
+    }
+    
+    public String sampleAttribute() {
+        return sampleAttribute;
     }
 
 }

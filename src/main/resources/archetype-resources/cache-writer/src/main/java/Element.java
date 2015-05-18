@@ -7,7 +7,9 @@ import java.util.Map;
 
 public enum Element {
     // must be first
-    UNKNOWN(null)    
+    UNKNOWN(null),
+    
+    SAMPLE_ELEMENT("sample-element")
     ;
 
     private final String name;

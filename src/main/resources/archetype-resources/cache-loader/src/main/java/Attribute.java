@@ -8,7 +8,10 @@ import java.util.Map;
 public enum Attribute {
 
     // must be first
-    UNKNOWN(null);
+    UNKNOWN(null),
+    
+    SAMPLE_ATTRIBUTE("sample-attribute")
+    ;
 
     // Other enums to be placed here
 
