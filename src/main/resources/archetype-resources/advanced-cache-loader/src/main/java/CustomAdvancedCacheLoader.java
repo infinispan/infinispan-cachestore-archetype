@@ -107,7 +107,7 @@ public class CustomAdvancedCacheLoader<K,V> implements AdvancedCacheLoader<K, V>
          * 
          * Implementors should build an {@link TaskContext} instance (implementation) that is fed to the {@link
          * CacheLoaderTask} on every invocation. The {@link CacheLoaderTask} might invoke {@link
-         * org.infinispan.persistence.spi.AdvancedCacheLoader.TaskContext#stop()} at any time, so implementors of this method
+         * org.infinispan.persistence.spi.AdvancedCacheLoader.TaskContext\#stop()} at any time, so implementors of this method
          * should verify TaskContext's state for early termination of iteration. The method should only return once the
          * iteration is complete or as soon as possible in the case TaskContext.stop() is invoked.
          * The parameters are as follows:
