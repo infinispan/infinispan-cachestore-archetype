@@ -1,6 +1,8 @@
 Custom Cache Store Archetype
 ============================
 
+**For versions of Infinispan >= 9.x, please use the [store-archetype](https://github.com/infinispan/infinispan-archetypes).**
+
 Install the archetype
 ---------------------
 
